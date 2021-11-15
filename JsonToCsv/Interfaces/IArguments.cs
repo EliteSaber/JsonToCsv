@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace JsonToCsv.Interfaces
+﻿namespace JsonToCsv.Interfaces
 {
     public interface IArguments
     {
+        public bool IsNoMessages { get; }
         public bool IsQuit { get; }
+        public string Message { get; }
         public string InputPathArgument { get; }
         public string OutputPathArgument { get; }
         public string SeparatorArgument { get;  }
